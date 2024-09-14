@@ -1,0 +1,53 @@
+.container{
+    background-color: rgb(245, 237, 237);
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content{
+    gap: 10%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    flex-direction: column;
+    text-align: left;
+    width: 600px;
+}
+
+.links{
+    display: flex;
+    align-self: flex-start;
+    gap: 15px;
+}
+
+h1{
+    margin: 0;
+    align-self: flex-start;
+    color: rgb(100, 130, 173);
+    font-family: "JetBrains Mono", serif;
+}
+
+p{
+    font-size: 18px;
+    align-self: flex-start;
+    margin: 0;
+    line-height: 1.4;
+    font-family: "SUSE", serif;
+}
+
+a{
+    font-family: "SUSE", serif;
+    text-decoration: none;
+    color: rgb(100, 130, 173);
+}
+
+.blue-highlight{
+    color: rgb(100, 130, 173);
+}
