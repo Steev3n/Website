@@ -6,7 +6,7 @@
 }
 
 .content{
-    gap: 10%;
+    gap: 5%;
 }
 
 .flex{
@@ -18,7 +18,7 @@
 .text{
     flex-direction: column;
     text-align: left;
-    width: 600px;
+    width: 25%;
 }
 
 .links{
@@ -48,6 +48,25 @@ a{
     color: rgb(100, 130, 173);
 }
 
+img{
+    height: auto;
+    width: 25%;
+}
+
 .blue-highlight{
     color: rgb(100, 130, 173);
+}
+
+@media (max-width: 850px){
+    .content{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .text{
+        width: 75%;
+    }
+
+    img{
+        width: 75%;
+    }
 }
