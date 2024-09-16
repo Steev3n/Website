@@ -6,7 +6,8 @@
 }
 
 .content{
-    gap: 5%;
+    gap: 0.5em;
+    height: 80%;
 }
 
 .flex{
@@ -18,7 +19,8 @@
 .text{
     flex-direction: column;
     text-align: left;
-    width: 25%;
+    height: 50%;
+    width: 40%;
 }
 
 .links{
@@ -32,10 +34,11 @@ h1{
     align-self: flex-start;
     color: rgb(100, 130, 173);
     font-family: "JetBrains Mono", serif;
+    font-size: 1.7em;
 }
 
 p{
-    font-size: 18px;
+    font-size: 1.2em;
     align-self: flex-start;
     margin: 0;
     line-height: 1.4;
@@ -49,8 +52,8 @@ a{
 }
 
 img{
-    height: auto;
-    width: 25%;
+    height: 50%;
+    width: auto;
 }
 
 .blue-highlight{
@@ -58,15 +61,31 @@ img{
 }
 
 @media (max-width: 850px){
+    .container{
+        overflow: visible;
+        height: 100vh;
+    }
     .content{
         flex-direction: column;
-        gap: 50px;
+        gap: 5%;
     }
     .text{
         width: 75%;
     }
-
     img{
+        height: auto;
         width: 75%;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 280px){
+    .content{
+        height: 100%;
     }
 }
