@@ -59,6 +59,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wr
 .project-list .card { padding: 32px; scroll-margin-top: 24px; }
 .project-list .card h2 { font-size: 26px; margin-bottom: 18px; }
 .project-list .card strong { color: var(--ink); }
+.project-image { display: block; width: 100%; height: auto; max-height: 280px; object-fit: contain; background: #fff; border-radius: 6px; margin-bottom: 20px; }
 @media (max-width: 850px) {
  .hero { gap: 36px; grid-template-columns: 1.3fr 1fr; padding-block: 48px; }
  .cards { grid-template-columns: 1fr; }
