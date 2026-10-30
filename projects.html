@@ -2,105 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projects — Steven Thao</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Machine learning, software, and robotics projects by Steven Thao, including AutoBot, Sign Sync, BullsAI, and the ECSE 211 Robot.">
+    <meta name="theme-color" content="#f8f6f1">
+    <title>Projects | Steven Thao</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/icon.ico">
-    <style>
-        p {
-            font-size: 1.2em;
-            align-self: flex-start;
-            margin-bottom: 1em;
-            line-height: 1.4;
-            font-family: "SUSE", serif;
-        }
-
-        .container{
-            background-color: rgb(245, 237, 237);
-            padding: 0;
-            height: auto;
-            min-height: 100vh;
-            overflow: visible;
-            margin-top: 2%;
-            margin-bottom: 2%;
-        }
-    </style>
 </head>
-
-<body class="flex container">
-<div class="flex content">
-    <div class="flex text-link">
-        <div class="flex text">
-            <h1><a href="index.html" class="blue-highlight">←</a> Projects</h1>
-
-            <br>
-
-            <p>Here’s a selection of my personal and academic projects — spanning full-stack apps, AI, and embedded systems.</p>
-
-            <br>
-
-            <p>
-                <strong class="blue-highlight">Full-Stack Board Game Manager (ECSE321)</strong><br>
-                Developed a full-stack board game management app using <strong>Java (Spring Boot + JDBC)</strong> for the backend
-                and <strong>Svelte + TypeScript</strong> for the frontend. Designed REST APIs, integrated an SQL RDBMS, and practiced
-                <strong>Agile (Scrum)</strong> development with <strong>JUnit</strong> tests for reliability.
-            </p>
-
-            <br>
-
-            <p>
-                <strong class="blue-highlight">MNIST Neural Network Classifier</strong> —
-                <a href="https://github.com/Steev3n/MNIST-handwritten-digit-classifier" target="_blank">[GitHub]</a><br>
-                Built a fully-connected neural network from scratch using <strong>Python, NumPy, and PyTorch</strong>,
-                achieving <strong>95% accuracy</strong> on MNIST. Tuned hyperparameters, used dropout regularization,
-                and visualized gradient/loss updates with <strong>Matplotlib</strong>.
-            </p>
-
-            <br>
-
-            <p>
-                <strong class="blue-highlight">School Supply Management App (ECSE223)</strong> —
-                <a href="https://github.com/F2024-ECSE223/ecse223-group-project-p10" target="_blank">[GitHub]</a><br>
-                Created a <strong>JavaFX/FXML</strong> desktop application using <strong>MVC architecture</strong> and UML design.
-                Implemented extensive <strong>JUnit + Cucumber/Gherkin</strong> tests with <strong>90%+</strong> coverage.
-                Focused on modularity and clean UI experience.
-            </p>
-
-            <br>
-
-            <p>
-                <strong class="blue-highlight">AutoBot AI Chatbot</strong> —
-                <a href="https://devpost.com/software/auto__bot" target="_blank">[Devpost]</a><br>
-                Winner of <strong>McGill CodeJam 14 (Matador AI Challenge)</strong>. Built an <strong>AI-powered chatbot</strong>
-                for car dealerships using <strong>named entity recognition</strong> and <strong>aspect-based sentiment analysis</strong>.
-                Designed custom recommendation logic and outperformed 10+ teams.
-            </p>
-
-            <br>
-
-            <p>
-                <strong class="blue-highlight">RAG + AgentKit Integration Research</strong><br>
-                Explored <strong>Retrieval-Augmented Generation (RAG)</strong> with <strong>OpenAI AgentKit</strong> for scalable,
-                context-aware chatbot capabilities. Tested <strong>pgvector + HNSW</strong> retrieval methods, studied
-                embedding variance, and implemented linear truncation to improve latency by up to <strong>70%</strong>.
-            </p>
-
-            <br>
-
-            <p>
-                <strong class="blue-highlight">MQTT Telemetry System (McGill Rocket Team)</strong><br>
-                Configured <strong>MQTT communication</strong> between a ground station and <strong>Teensy 4.1 microcontroller</strong>
-                via <strong>Mosquitto broker</strong> for real-time telemetry. Enhanced link reliability and latency through
-                low-level protocol debugging.
-            </p>
-        </div>
-    </div>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="site-header">
+    <a class="brand" href="index.html">Steven Thao<span>.</span></a>
+    <nav aria-label="Main navigation">
+        <a href="index.html#experience">Experience</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="assets/CV.pdf" target="_blank" rel="noopener">Resume ↗</a>
+    </nav>
+</header>
+<main id="main">
+<div class="page-intro"><p class="eyebrow">Learning through projects</p><h1>Selected projects<span>.</span></h1><p class="intro">A few projects I’ve worked on with teams, what I contributed, and what we explored together.</p></div>
+<div class="project-list">
+<article class="card" id="autobot"><p class="eyebrow">CodeJam 14 · Challenge winner</p><h2>AutoBot</h2><p>A dealership chatbot that retrieves relevant information to answer customer questions.</p><p><strong>My contribution.</strong> Implemented the RAG retrieval pipeline using embeddings, vector database storage, and cosine similarity search.</p><p><strong>Outcome.</strong> Our team won the Matador AI LLM Challenge at McGill CodeJam 14.</p><ul class="tags" aria-label="Technologies"><li>RAG</li><li>Embeddings</li><li>Vector search</li></ul><a class="project-link" href="https://devpost.com/software/auto__bot">View AutoBot on Devpost ↗</a></article><article class="card" id="sign-sync"><p class="eyebrow">Computer vision · Nov 2025</p><h2>Sign Sync</h2><p>An ASL-to-speech prototype for a fixed vocabulary of signs in virtual meetings.</p><p><strong>My contribution.</strong> Integrated a CNN recognition model into a Python application for speech output, and contributed GPT-powered code to turn recognized symbols into words and expressions.</p><p><strong>Outcome.</strong> Connected visual recognition, language augmentation, and speech output in a working prototype.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>CNN</li><li>Language models</li></ul><a class="project-link" href="https://devpost.com/software/sign-sync">View Sign Sync on Devpost ↗</a></article><article class="card" id="bullsai"><p class="eyebrow">McHacks 12 · National Bank challenge</p><h2>BullsAI</h2><p>An LSTM-based stock prediction project exploring market behavior during volatility.</p><p><strong>My contribution.</strong> Worked on the LSTM model with a teammate and trained it on the dataset supplied for the challenge.</p><p><strong>Outcome.</strong> Our team submitted a web application combining model projections with market indicators at McHacks 12.</p><ul class="tags" aria-label="Technologies"><li>TensorFlow</li><li>LSTM</li><li>Time series</li></ul><a class="project-link" href="https://devpost.com/software/bullsai">View BullsAI on Devpost ↗</a></article>
+<article class="card" id="ecse-211-robot">
+    <p class="eyebrow">ECSE 211 · Robotics course project</p>
+    <h2>ECSE 211 Robot</h2>
+    <p>A team project to build an autonomous robot with LEGO EV3 parts and have it navigate an obstacle course.</p>
+    <p><strong>My contribution.</strong> Implemented the wall-following PID controller and contributed to part of the grabbing mechanism.</p>
+    <ul class="tags" aria-label="Technologies"><li>LEGO EV3</li><li>PID control</li><li>Robotics</li></ul>
+</article>
+<article class="card" id="neural-networks"><p class="eyebrow">McGill AI Lab · Learning from the foundations</p><h2>Neural networks, from scratch</h2><p>Implemented binary classifiers and neural networks in NumPy while leading a 12-member ML project team.</p><p><strong>My contribution.</strong> Model implementation, task assignment, code review, and a 50+ page reference covering mathematical foundations and optimization strategies.</p><p><strong>Outcome.</strong> Evaluated DNNs on MNIST and Fashion-MNIST, achieving up to 98% test accuracy.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>NumPy</li><li>Neural networks</li></ul><a class="project-link" href="https://github.com/Steev3n/MNIST-handwritten-digit-classifier">Explore the MNIST repository ↗</a></article>
 </div>
-
-<script src="index.js"></script>
+</main>
+<footer>
+    <span>Steven Thao · Montreal</span>
+    <div class="socials"><a href="mailto:steven.thao04@gmail.com">Email</a><a href="https://www.linkedin.com/in/steven-thao-221326237/">LinkedIn</a><a href="https://github.com/Steev3n">GitHub</a></div>
+</footer>
+</div>
 </body>
 </html>
